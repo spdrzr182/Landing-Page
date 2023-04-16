@@ -9,7 +9,6 @@ body {
     align-items: stretch;
     flex: 1;
     width: 100%;
-    overflow: hidden;
 }
 
 html {
@@ -61,7 +60,7 @@ ul {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 15px;
     color: #f9faf8;
     gap: 1;
 }
@@ -94,8 +93,8 @@ img {
 
 .hero-button {
     background-color: #3882f6;
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 20px;
+    padding: 10px 20px;
     border-radius: 8px;
     border: none;
     width: 25%;
@@ -103,23 +102,118 @@ img {
     font-weight: 800;
 }
 
+.hero-button:hover {
+    background-color: #0f63e9;
+}
+
 .main {
     display: flex;
-    border: 2px solid red;
     width: 100%;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    margin-top: 1.5em;
 }
 
 .content {
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2em;
+    padding: 10px;
+    margin: 12px;
+    margin-bottom: 3em;
 }
 
 .square {
     display: flex;
+    flex-direction: column;
 }
 
+.main .main-content .content .square img {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
 
+.testimonial {
+    width: 100%;
+    background-color: #E5E7EB;
+    height: 12em;
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.quote {
+    width: 80%;
+}
+
+.quoter {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: end;
+    font-style: normal;
+    margin-top: -20px;
+    padding: 0px 40px 0px 0px;
+}
+
+.call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 5em;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    background-color: #3882f6;
+    padding: 1em 5em;
+    border-radius: 8px;
+    color: #E5E7EB;
+}
+
+.banner-left h3 {
+    margin: 20px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+.banner-left h4 {
+    margin: 0px 0px 10px 0px;
+    padding: 8px;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.banner-right button {
+    background-color: #3882f6;
+    margin: 20px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 1px solid #f9faf8;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.banner-right button:hover {
+    background-color: #0f63e9;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #1f2937;
+    color: #E5E7EB;
+}
